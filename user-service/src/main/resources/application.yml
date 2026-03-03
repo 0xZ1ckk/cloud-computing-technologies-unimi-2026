@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ticketing
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+app:
+  jwt:
+    secret: dGhpcy1pcy1hLWRlbW8tc2VjcmV0LWtleS0zMi1ieXRlcy1sb25n
+    ttl-seconds: 3600
